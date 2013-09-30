@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: remo expand 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-05 12:26+0100\n"
+"PO-Revision-Date: 2011-03-05 12:30+0100\n"
+"Last-Translator: cali <cali@concrete5.fr>\n"
+"Language-Team: Concrete5 FR <team@concrete5.fr>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: blocks/remo_expand/add.php:2
+#: blocks/remo_expand/edit.php:2
+#: blocks/remo_expand/view.php:3
+#: blocks/remo_expand/controller.php:2
+#: blocks/remo_expand/templates/arrows/view.php:3
+#: blocks/remo_expand/templates/concrete5/view.php:3
+#: blocks/remo_expand/templates/plus_minus/view.php:3
+#: blocks/remo_expand/scrapbook.php:2
+#: controller.php:3
+msgid "Access Denied."
+msgstr "Accès refusé."
+
+#: blocks/remo_expand/add.php:8
+#: blocks/remo_expand/edit.php:8
+msgid "Content"
+msgstr "Contenu"
+
+#: blocks/remo_expand/form_init.php:6
+msgid "Title"
+msgstr "Titre"
+
+#: blocks/remo_expand/form_init.php:11
+msgid "Layout"
+msgstr "agencement"
+
+#: blocks/remo_expand/form_init.php:14
+msgid "None selected"
+msgstr "Aucune sélection"
+
+#: blocks/remo_expand/form_init.php:31
+msgid "Default State"
+msgstr "Etat par défaut"
+
+#: blocks/remo_expand/form_init.php:33
+msgid "Open"
+msgstr "Ouvert"
+
+#: blocks/remo_expand/form_init.php:34
+msgid "Closed"
+msgstr "Fermé"
+
+#: blocks/remo_expand/form_init.php:39
+msgid "Speed in miliseconds"
+msgstr "Vitesse en millisecondes"
+
+#: blocks/remo_expand/form_init.php:39
+msgid "Speed"
+msgstr "Vitesse"
+
+#: blocks/remo_expand/controller.php:12
+#: controller.php:12
+msgid "Expand/Collapse Content."
+msgstr "Etendre/Replier un contenu."
+
+#: blocks/remo_expand/controller.php:16
+#: controller.php:16
+msgid "Expander"
+msgstr "Expander"
+
+#: blocks/remo_expand/editor_image.php:17
+msgid "Image"
+msgstr "Image"
+
+#: blocks/remo_expand/editor_image.php:18
+msgid "Choose Image"
+msgstr "Choisir une image"
+

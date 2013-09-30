@@ -1,0 +1,14 @@
+.ccm-remo-expand-title {
+  cursor: pointer;
+}
+.ccm-remo-expand-content {
+  padding-left: 5px;
+} 
+.ccm-remo-expand-open {
+  background: url(images/up.png) no-repeat 2px 2px;
+  padding-left:20px;
+}
+.ccm-remo-expand-closed {
+  background: url(images/down.png) no-repeat 2px 2px;
+  padding-left:20px;
+}

@@ -1,0 +1,58 @@
+.ccm-remo-expand-title {
+  cursor: pointer;
+}
+.ccm-remo-expand-content {
+  padding-left: 8px;
+} 
+
+.ccm-remo-expand-title .ccm-icon {
+	height:30px;
+	display:block;
+	float:left;
+	padding-left: 15px;
+	padding-right: 0px;
+}
+.ccm-remo-expand-open .ccm-icon {
+	background: url(images/arrow_up_black.png) no-repeat 0px 11px;
+}
+.ccm-remo-expand-closed .ccm-icon {
+	background: url(images/arrow_down_black.png) no-repeat 0px 12px;
+}
+
+a.ccm-remo-expand-title {
+text-decoration:none;
+margin:0 5px;
+padding-right:7px;
+height:30px;
+line-height:30px;
+display:block;
+background:url(images/inactive_left.png) left top no-repeat;
+}
+a.ccm-remo-expand-title span.ccm-background{
+background:url(images/inactive_right.png) right top no-repeat;
+height:30px;
+display:block;
+float:left;
+margin-left:7px;
+padding-right: 7px;
+}
+
+a.ccm-remo-expand-title:hover {
+text-decoration:none;
+margin:0 5px;
+padding-right:7px;
+height:30px;
+line-height:30px;
+display:block;
+
+background:url(images/active_left.png) left top no-repeat;
+}
+a.ccm-remo-expand-title:hover span.ccm-background {
+background:url(images/active_right.png) right top no-repeat;
+height:30px;
+float:left;
+cursor: pointer;
+display:block;
+margin-left:7px;
+padding-right: 7px;
+}
