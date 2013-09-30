@@ -1,9 +1,9 @@
 .ccm-remo-expand-title {
-  cursor: pointer;
+    cursor: pointer;
 }
 .ccm-remo-expand-open {
-  color: blue;
+    color: blue;
 }
 .ccm-remo-expand-closed {
-  color: red;
+    color: red;
 }

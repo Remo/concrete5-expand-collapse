@@ -26,6 +26,11 @@ class RemoExpandBlockController extends BlockController {
         $this->set('content', '');
     }
 
+    public function view() {
+        $this->set('content', $this->getContent());
+        $this->set('speed', $this->getSpeed());
+    }
+
     public function getSpeed() {
         return $this->speed == "" ? '500' : $this->speed;
     }
@@ -171,7 +176,7 @@ class RemoExpandBlockController extends BlockController {
             $templatesRoot = array_filter($templatesRoot, array($this, 'filterDirectories'));
             $templates = array_merge($templates, $templatesRoot);
         }
-        
+
         return $templates;
     }
 
