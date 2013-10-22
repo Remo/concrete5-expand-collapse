@@ -6,7 +6,7 @@ class RemoExpandPackage extends Package {
 
     protected $pkgHandle = 'remo_expand';
     protected $appVersionRequired = '5.6.2.1';
-    protected $pkgVersion = '1.2.5';
+    protected $pkgVersion = '1.2.6';
 
     public function getPackageDescription() {
         return t("Expand / Collapse Content.");

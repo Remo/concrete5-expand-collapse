@@ -50,6 +50,6 @@ if ($textEditorWidth < 580)
 
     <?php  Loader::element('editor_config'); ?>
     <?php  Loader::element('editor_controls');?>
-    <?php  echo $form->textarea('content', $content, array('class' => 'ccm-advanced-editor'));?>
+    <?php  echo $form->textarea('remo-expand-content', $content, array('class' => 'ccm-advanced-editor'));?>
 
 </div>

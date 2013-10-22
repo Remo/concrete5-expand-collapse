@@ -204,7 +204,7 @@ class RemoExpandBlockController extends BlockController {
     }
 
     public function save($data) {
-        $content = $this->translateTo($data['content']);
+        $content = $this->translateTo($data['remo-expand-content']);
         $args['content'] = $content;
         $args['state'] = $data['state'];
         $args['title'] = $data['title'];
