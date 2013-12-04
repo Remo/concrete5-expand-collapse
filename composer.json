@@ -1,5 +1,5 @@
 {
-    "name": "Remo/remo_expand",
+    "name": "remo/remo_expand",
     "type": "concrete5-package",
     "require": {
         "php": ">=5.3.2",
