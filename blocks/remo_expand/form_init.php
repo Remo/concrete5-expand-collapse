@@ -6,8 +6,7 @@ if ($textEditorWidth < 580)
     $textEditorWidth = 580;
 ?>
 <h2><?php  echo t('Title')?></h2>
-
-<input type="text" name="title" value="<?php  echo $controller->title?>" style="width:<?php  echo ($textEditorWidth - 40)?>px;"/>
+<input type="text" name="title" value="<?php  echo $expandTitle; ?>" style="width:<?php  echo ($textEditorWidth - 40)?>px;"/>
 
 <div style="float:left;width:200px;">
     <h2><?php  echo t('Layout')?></h2>
@@ -15,15 +14,13 @@ if ($textEditorWidth < 580)
     <select name="layout">
         <option value="">(<?php  echo t('None selected')?>)</option>
         <?php 
-        $templates = $controller->getTemplates();
-        $currentTemplate = $controller->getCurrentTemplate();
-        foreach ($templates as $template) {
+        foreach ($expandTemplates as $expandTemplate) {
             $selectedTemplate = "";
-            if ($currentTemplate == $template) {
+            if ($expandCurrentTemplate == $expandTemplate) {
                 $selectedTemplate = ' selected="selected" ';
             }
 
-            echo "<option {$selectedTemplate} value=\"{$template}\">{$template}</option>";
+            echo "<option {$selectedTemplate} value=\"{$expandTemplate}\">{$expandTemplate}</option>";
         }
         ?>
     </select>
@@ -32,14 +29,14 @@ if ($textEditorWidth < 580)
 <div style="float:left;width:180px;">
     <h2><?php  echo t('Default State')?></h2>
     <select name="state">
-        <option value="0"<?php  echo $controller->state == 0 ? ' selected="selected" ' : ''?>><?php  echo t('Open')?></option>
-        <option value="1"<?php  echo $controller->state == 1 ? ' selected="selected" ' : ''?>><?php  echo t('Closed')?></option>
+        <option value="0"<?php  echo $expandState == 0 ? ' selected="selected" ' : ''?>><?php  echo t('Open')?></option>
+        <option value="1"<?php  echo $expandState == 1 ? ' selected="selected" ' : ''?>><?php  echo t('Closed')?></option>
     </select>
 </div>
 
 <div style="float:left;width:120px;">
     <h2 title="<?php  echo t('Speed in miliseconds')?>"><?php  echo t('Speed')?></h2>
-    <input type="text" size="5" name="speed" value="<?php  echo $controller->getSpeed()?>"/>
+    <input type="text" size="5" name="speed" value="<?php  echo $expandSpeed; ?>"/>
 </div>
 
 <div style="clear:both"></div>
