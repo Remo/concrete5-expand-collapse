@@ -19,7 +19,6 @@ class RemoExpandBlockController extends BlockController {
 
     public function edit() {
         $content = $this->translateFromEditMode($this->content);
-        $this->set('test', 'hallo');
         $this->set('content', $content);
         $this->set('expandTitle', $this->title);
         $this->set('expandTemplates', $this->getTemplates());
