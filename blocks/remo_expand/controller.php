@@ -29,6 +29,11 @@ class RemoExpandBlockController extends BlockController {
 
     public function add() {
         $this->set('content', '');
+        $this->set('expandTitle', $this->title);
+        $this->set('expandTemplates', $this->getTemplates());
+        $this->set('expandCurrentTemplate', $this->getCurrentTemplate());
+        $this->set('expandState', $this->state);
+        $this->set('expandSpeed', $this->getSpeed());
     }
 
     public function view() {
@@ -175,13 +180,16 @@ class RemoExpandBlockController extends BlockController {
     public function getTemplateByDirectory() {
         $templates = scandir(dirname(__FILE__) . '/templates');
         $templates = array_filter($templates, array($this, 'filterDirectories'));
-
-        $templatesRoot = scandir(DIR_FILES_BLOCK_TYPES . '/remo_expand/templates');
+        
+        $blockTemplatesPath = DIR_FILES_BLOCK_TYPES . '/remo_expand/templates';
+        if(is_dir($blockTemplatesPath)) {
+            $templatesRoot = scandir($blockTemplatesPath);
+        }
         if (is_array($templatesRoot)) {
             $templatesRoot = array_filter($templatesRoot, array($this, 'filterDirectories'));
             $templates = array_merge($templates, $templatesRoot);
         }
-
+        
         return $templates;
     }
 
