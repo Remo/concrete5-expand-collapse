@@ -9,8 +9,9 @@ defined('C5_EXECUTE') or die('Access Denied.');
     }
 
     echo '<div id="ccm-remo-expand-title-' . $bID . '" class="ccm-remo-expand-title ' . $className . '" data-expander-speed="' . $speed . '">' . $title . '</div>';
+    echo '<div class="ccm-remo-expand-content-padding-wrapper">';
     echo '<div id="ccm-remo-expand-content-' . $bID . '" class="ccm-remo-expand-content">';
     echo $content;
-    echo '</div>';
+    echo '</div></div>';
     ?>
 </div>
