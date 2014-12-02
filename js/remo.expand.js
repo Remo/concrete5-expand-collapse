@@ -1,7 +1,7 @@
 $(document).ready(function () {
     transferPaddings();
-    hideClosedBoxes();
     setContentHeights();
+    hideClosedBoxes();
     setClickEvents();
 });
 
